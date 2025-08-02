@@ -1,0 +1,84 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лендинг</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; background: #f9f9f9; color: #333; }
+    header, section { padding: 40px 20px; text-align: center; }
+    .banner { background: url('https://via.placeholder.com/1200x300') center/cover no-repeat; height: 300px; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 2rem; color: #666; }
+    .cards { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; margin-top: 20px; }
+    .card {
+      background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 200px;
+    }
+    .card img { width: 100%; border-radius: 6px; margin-bottom: 10px; }
+    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+    .video-container iframe {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    }
+    .mini-banners { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-top: 20px; }
+    .mini { width: 300px; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+
+  <div class="banner"></div>
+
+  <section>
+    <h1>Заголовок лендинга</h1>
+    <h2>Подзаголовок, описывающий суть предложения</h2>
+  </section>
+
+  <section>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Товар 1" />
+        <p>Товар 1</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Товар 2" />
+        <p>Товар 2</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Товар 3" />
+        <p>Товар 3</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200x150" alt="Товар 4" />
+        <p>Товар 4</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h1>Видео-презентация</h1>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section>
+    <h1>Наши преимущества</h1>
+    <div class="mini-banners">
+      <div class="mini">
+        <h2>Преимущество 1</h2>
+        <p>Описание 1</p>
+      </div>
+      <div class="mini">
+        <h2>Преимущество 2</h2>
+        <p>Описание 2</p>
+      </div>
+      <div class="mini">
+        <h2>Преимущество 3</h2>
+        <p>Описание 3</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
